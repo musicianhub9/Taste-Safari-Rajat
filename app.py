@@ -683,6 +683,16 @@ def google_verification_b269():
     return send_from_directory(PUBLIC_DIR, "googleb269c52b6ab4161a.html")
 
 
+@app.route("/sitemap.xml")
+def sitemap_xml():
+    return send_from_directory(PUBLIC_DIR, "sitemap.xml", mimetype="application/xml")
+
+
+@app.route("/robots.txt")
+def robots_txt():
+    return send_from_directory(PUBLIC_DIR, "robots.txt", mimetype="text/plain")
+
+
 @app.route("/uploads/<path:filename>")
 def uploaded_media(filename):
     return send_from_directory(UPLOAD_ROOT, filename)
