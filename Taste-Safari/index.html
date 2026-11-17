@@ -885,14 +885,14 @@
       border: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-lg);
       background: var(--bg-surface);
-      aspect-ratio: 4 / 5;
+      aspect-ratio: 1 / 1;
     }
 
     .hero-visual-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: top center;
+      object-position: center center;
       transition: transform var(--transition-slow);
     }
     .hero-visual-card:hover .hero-visual-img {
@@ -906,10 +906,7 @@
     }
 
     .hero-floating-badge {
-      position: absolute;
-      bottom: 1.5rem;
-      left: 1.5rem;
-      right: 1.5rem;
+      margin-top: 1.25rem;
       background: rgba(20, 10, 4, 0.88);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
@@ -2286,7 +2283,7 @@
       .hero-visual-card {
         max-width: 440px;
         margin: 0 auto;
-        aspect-ratio: 1;
+        aspect-ratio: 1 / 1;
       }
       .intro-grid {
         grid-template-columns: 1fr;
@@ -2387,7 +2384,7 @@
       }
       .hero-visual-card {
         max-width: 100%;
-        aspect-ratio: 4 / 4.5;
+        aspect-ratio: 1 / 1;
       }
       .hero-floating-badge {
         left: 0.85rem;
@@ -2829,16 +2826,16 @@
 
           <div class="hero-visual-side">
             <div class="hero-visual-card">
-              <img src="assets/images/rajat_thali_review.jpg" alt="Rajat Poonia reviewing authentic Bharatpur thali feast" class="hero-visual-img" onerror="if(!this.dataset.retry){this.dataset.retry='1';this.src='public/assets/images/rajat_thali_review.jpg';}">
+              <img src="assets/images/rajat_punia_square.jpg" alt="Rajat Poonia reviewing authentic Bharatpur thali feast" class="hero-visual-img" onerror="if(!this.dataset.retry){this.dataset.retry='1';this.src='assets/images/rajat_thali_review.jpg';}">
               <div class="hero-scrim"></div>
-              <div class="hero-floating-badge">
-                <div>
-                  <div class="hero-badge-title">Rajat's Genuine Stamp</div>
-                  <div class="hero-badge-sub">100% Honest · Zero Paid Bias</div>
-                </div>
-                <div style="font-family:var(--font-display); font-size:1.6rem; font-weight:800; color:var(--accent);">
-                  80+
-                </div>
+            </div>
+            <div class="hero-floating-badge">
+              <div>
+                <div class="hero-badge-title">Rajat's Genuine Stamp</div>
+                <div class="hero-badge-sub">100% Honest · Zero Paid Bias</div>
+              </div>
+              <div style="font-family:var(--font-display); font-size:1.6rem; font-weight:800; color:var(--accent);">
+                80+
               </div>
             </div>
           </div>
